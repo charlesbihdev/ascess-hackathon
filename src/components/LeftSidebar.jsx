@@ -80,28 +80,30 @@ const LeftSidebar = ({ className, showLeftSidebar, setShowLeftSidebar }) => {
           </li>
           <li>
             <Link
-              href="/"
-              className={`font-bold mb-14 p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center`}
+              href="/findbymap"
+              className={`font-bold mb-14 p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center
+
+                ${pathname == "/findbymap" ? "bg-gray-400 !text-white" : ""} 
+
+              `}
             >
               <FaMapMarkerAlt size={20} className="mr-2" />
               Find by map
             </Link>
           </li>
           <li>
-            <button
-              onClick={() => alert("Report Lost Items clicked")}
-              className="font-bold p-2 rounded-lg text-black bg-red-500 hover:bg-red-500 hover:text-white transition-colors flex items-center w-full"
-            >
-              Report Lost Items
-            </button>
+            <Link href="/reportmissing">
+              <button className="font-bold p-2 rounded-lg text-black bg-red-500 hover:bg-red-500 hover:text-white transition-colors flex items-center w-full">
+                Report Lost Items
+              </button>
+            </Link>
           </li>
           <li>
-            <button
-              onClick={() => alert("Report Found Items clicked")}
-              className="font-bold p-2 rounded-lg text-black bg-blue-500 hover:bg-blue-500 hover:text-white transition-colors flex items-center w-full"
-            >
-              Report Found Items
-            </button>
+            <Link href="/reportfound">
+              <button className="font-bold p-2 rounded-lg text-black bg-blue-500 hover:bg-blue-500 hover:text-white transition-colors flex items-center w-full">
+                Report Found Items
+              </button>
+            </Link>
           </li>
         </ul>
       </div>

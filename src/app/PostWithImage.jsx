@@ -6,21 +6,26 @@ const PostWithImage = () => {
     <div className="w-full bg-[#dfecff] py-6 rounded-2xl !mb-8 p-4">
       <div className=" border rounded-xl max-w-full bg-slate-100 w-full md:w-5/6 mx-auto shadow">
         {/* Profile Section */}
-        <div className="flex items-center px-4 py-3 border-b">
-          <img
-            className="h-12 w-12 rounded-full"
-            src="/images/avatar/avatar.jpg"
-            alt="Profile"
-          />
-          <div className="ml-3">
-            <span className=" text-black text-lg font-semibold block leading-tight">
-              Nana Acamoah
-            </span>
-            <span className="text-gray-600 text-sm flex">
-              <IoLocationOutline className="text-lg mr-2" />
-              <p>Main Auditorium</p>
-            </span>
+        <div className="flex justify-between items-center px-4 py-3 border-b">
+          <div className="flex">
+            <img
+              className="h-12 w-12 rounded-full"
+              src="https://picsum.photos/id/1027/150/150"
+              alt="Profile"
+            />
+            <div className="ml-3">
+              <span className="text-lg font-semibold block leading-tight">
+                Nana Acamoah
+              </span>
+              <span className="text-gray-600 text-sm flex">
+                <IoLocationOutline className="text-lg mr-2" />
+                <p>Main Auditorium</p>
+              </span>
+            </div>
+
           </div>
+
+          <div className="bg-red-400 px-5 py-1 rounded-md">Found</div>
         </div>
 
         {/* Large Image */}
