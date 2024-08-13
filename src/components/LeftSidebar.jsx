@@ -84,7 +84,7 @@ const LeftSidebar = ({ className, showLeftSidebar, setShowLeftSidebar }) => {
             </Link>
           </li>
         </ul>
-      </nav>
+      </div>
     </aside>
   );
 };

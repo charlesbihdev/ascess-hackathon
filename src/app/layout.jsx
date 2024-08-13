@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
               // showSidebar={showSidebar}
             />
             <article className="flex flex-col justify-between md:ml-[16rem] xl:mr-[16rem] min-h-[94vh] md:min-h-[95vh] lg:min-h-[88vh]">
-              <div className="bg-white overflow-hidden shadow-sm">
+              <div className="bg-white overflow-hidden !mb-2 p-2 md:p-4">
                 {children}
               </div>
             </article>
