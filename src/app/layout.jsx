@@ -38,14 +38,14 @@ export default function RootLayout({ children }) {
               // pathname={pathname}
               // showSidebar={showSidebar}
             />
-            <article className="flex flex-col justify-between md:mx-[16rem] min-h-[94vh] md:min-h-[95vh] lg:min-h-[88vh]">
+            <article className="flex flex-col justify-between md:ml-[16rem] xl:mr-[16rem] min-h-[94vh] md:min-h-[95vh] lg:min-h-[88vh]">
               <div className="bg-white overflow-hidden shadow-sm">
                 {children}
               </div>
             </article>
             <RightSidebar
               showRightSidebar={showRightSidebar}
-              className="top-16 right-0 fixed overflow-scroll w-[16rem] overflow-y-auto h-screen max-h-screen pb-8 border border-black"
+              className="top-16 right-0 fixed overflow-scroll w-[16rem] overflow-y-auto h-screen max-h-screen pb-8"
               // pathname={pathname}
               // showSidebar={showSidebar}
             />

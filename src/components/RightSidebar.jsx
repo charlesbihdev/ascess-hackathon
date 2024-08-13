@@ -22,9 +22,9 @@ const RightSidebar = ({ className, showRightSidebar }) => {
 
   return (
     <aside
-      className={` z-40 transition-transform ${
+      className={` z-0 transition-transform ${
         showRightSidebar ? "translate-x-0" : "translate-x-full"
-      } !bg-white md:translate-x-0 dark:bg-gray-800 ${className}`}
+      } !bg-white xl:translate-x-0 dark:bg-gray-800 ${className}`}
     >
       <div className="h-full py-5 px-3 bg-white dark:bg-gray-800">
         <ul className="space-y-2 mb-5">
