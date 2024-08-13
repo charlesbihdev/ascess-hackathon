@@ -9,6 +9,7 @@ import { PiUserListBold } from "react-icons/pi";
 import { PiCaretDownBold, PiCaretUpBold } from "react-icons/pi";
 import { FiBookOpen } from "react-icons/fi";
 import { usePathname } from "next/navigation";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const LeftSidebar = ({ className, showLeftSidebar, setShowLeftSidebar }) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -57,8 +58,12 @@ const LeftSidebar = ({ className, showLeftSidebar, setShowLeftSidebar }) => {
           height={100}
           className="rounded-full"
         />
-        <h2 className="text-xl font-bold text-black">Forson</h2>    
-        <p className="text-sm -mt-6">fmical2003@st.umat.edu.gh</p>  
+        <h2 className="text-xl font-bold text-black">Donkor Nana Acamoah</h2>
+            
+        <p className="text-gray-500 text-sm -mt-6">
+          nadonkor3121@st.umat.edu.gh
+        </p>
+          
       </div>
       <div className="h-full pb-5 px-3 bg-white">
         <ul className="space-y-2 mb-5">
@@ -75,44 +80,29 @@ const LeftSidebar = ({ className, showLeftSidebar, setShowLeftSidebar }) => {
           </li>
           <li>
             <Link
-              href="/reels"
-              className={`font-bold p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center
-                ${pathname == "/reels" ? "bg-gray-400 !text-white" : ""} 
-          
+              href="/findbymap"
+              className={`font-bold mb-14 p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center
+
+                ${pathname == "/findbymap" ? "bg-gray-400 !text-white" : ""} 
+
               `}
             >
-              <MdOutlineEventAvailable size={20} className="mr-2" />
-              Reels
+              <FaMapMarkerAlt size={20} className="mr-2" />
+              Find by map
             </Link>
           </li>
           <li>
-            <Link
-              href="/events"
-              className={`font-bold  p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center
-                ${pathname == "/events" ? "bg-gray-400 !text-white" : ""} 
-              
-              `}
-            >
-              <RiCalendarEventLine size={20} className="mr-2" />
-              Events
+            <Link href="/reportmissing">
+              <button className="font-bold p-2 rounded-lg text-black bg-red-500 hover:bg-red-500 hover:text-white transition-colors flex items-center w-full">
+                Report Lost Items
+              </button>
             </Link>
           </li>
           <li>
-            <Link
-              href="/profile"
-              className="font-bold p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center"
-            >
-              <PiUserListBold size={20} className="mr-2" />
-              Profile
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/resources/docs"
-              className="font-bold p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center"
-            >
-              <FiBookOpen size={20} className="mr-2" />
-              Resources
+            <Link href="/reportfound">
+              <button className="font-bold p-2 rounded-lg text-black bg-blue-500 hover:bg-blue-500 hover:text-white transition-colors flex items-center w-full">
+                Report Found Items
+              </button>
             </Link>
           </li>
         </ul>
