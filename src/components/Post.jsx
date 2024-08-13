@@ -9,10 +9,7 @@ const Post = () => {
       >
         <div className="w-full flex mb-4">
           <div className="overflow-hidden rounded-full w-12 h-12">
-            <img
-              src="https://mighty.tools/mockmind-api/content/human/44.jpg"
-              alt="Profile"
-            />
+            <img src="/images/avatar/laptop2.jpeg" alt="Profile" />
           </div>
           <div className="flex-grow pl-3">
             <h6 className="font-bold text-md">Joe Blow</h6>
