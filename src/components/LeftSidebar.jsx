@@ -45,7 +45,19 @@ const LeftSidebar = ({ className, showLeftSidebar, setShowLeftSidebar }) => {
           </svg>
         </button>
       </div>
-      <div className="h-full py-5 px-3 bg-white">
+
+      <div className="flex flex-col items-center mt-4">
+        <img
+          src="/images/avatar/avatar.jpg"
+          alt="User Profile"
+          width={100}
+          height={100}
+          className="rounded-full"
+        />
+        <h2 className="text-xl font-bold text-black">Forson</h2>    
+        <p className="text-sm -mt-6">fmical2003@st.umat.edu.gh</p>  
+      </div>
+      <div className="h-full pb-5 px-3 bg-white">
         <ul className="space-y-2 mb-5">
           <li>
             <Link
