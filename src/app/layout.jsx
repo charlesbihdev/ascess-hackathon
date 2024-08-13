@@ -1,6 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import Navbar from "@/components/Navbar";
+import RightSidebar from "@/components/RightSidebar";
+import LeftSidebar from "@/components/LeftSidebar";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -11,7 +15,28 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="min-h-screen bg-gray-100">
+          <Navbar avatar="/images/avatar/avatar.jpg" />
+          <main className="pt-[4.1rem] min-h-screen">
+            <LeftSidebar
+              className="top-0 fixed overflow-scroll w-[16rem] overflow-y-auto h-screen max-h-screen pb-8"
+              // pathname={pathname}
+              // showSidebar={showSidebar}
+            />
+            <article className="flex flex-col justify-between md:mx-[16rem] min-h-[94vh] md:min-h-[95vh] lg:min-h-[88vh]">
+              <div className="bg-white overflow-hidden shadow-sm">
+                {children}
+              </div>
+            </article>
+            <RightSidebar
+              className="top-16 right-0 fixed overflow-scroll w-[16rem] overflow-y-auto h-screen max-h-screen pb-8 border border-black"
+              // pathname={pathname}
+              // showSidebar={showSidebar}
+            />
+          </main>
+        </div>
+      </body>
     </html>
   );
 }

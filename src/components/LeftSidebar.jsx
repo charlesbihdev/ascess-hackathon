@@ -16,7 +16,7 @@ import { PiCaretUpBold } from "react-icons/pi";
 
 import { MdOutlineEventAvailable } from "react-icons/md";
 
-const Sidebar = ({ className }) => {
+const LeftSidebar = ({ className }) => {
   const pathname = "/";
   const [isOpen, setIsOpen] = useState(true);
   const [showSidebar, setShowSidebar] = useState(true);
@@ -118,4 +118,4 @@ const Sidebar = ({ className }) => {
   );
 };
 
-export default Sidebar;
+export default LeftSidebar;
