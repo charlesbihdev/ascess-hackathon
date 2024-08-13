@@ -6,6 +6,7 @@ import RightSidebar from "@/components/RightSidebar";
 import LeftSidebar from "@/components/LeftSidebar";
 import React from "react";
 import Post from "@/components/Post";
+import PostRender from "@/components/PostRender";
 import PostWithImage from "./PostWithImage";
 import Link from "next/link";
 
@@ -27,6 +28,7 @@ const page = () => {
       </ul>
 
       <PostWithImage />
+      <PostRender />
     </>
   );
 };
