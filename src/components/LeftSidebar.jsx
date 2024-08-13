@@ -8,10 +8,12 @@ import { MdOutlineEventAvailable } from "react-icons/md";
 import { PiUserListBold } from "react-icons/pi";
 import { PiCaretDownBold, PiCaretUpBold } from "react-icons/pi";
 import { FiBookOpen } from "react-icons/fi";
+import { usePathname } from "next/navigation";
 
 const LeftSidebar = ({ className, showLeftSidebar, setShowLeftSidebar }) => {
-  const pathname = "/";
   const [isOpen, setIsOpen] = useState(true);
+  const pathname = usePathname();
+
   return (
     <aside
       className={`-mt-1 z-40 transition-transform ${
@@ -62,8 +64,10 @@ const LeftSidebar = ({ className, showLeftSidebar, setShowLeftSidebar }) => {
         <ul className="space-y-2 mb-5">
           <li>
             <Link
-              href="/feeds"
-              className="font-bold p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center"
+              href="/"
+              className={`font-bold p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center 
+                ${pathname == "/" ? "bg-gray-400 !text-white" : ""} 
+                `}
             >
               <MdOutlineDashboard size={20} className="mr-2" />
               Feeds
@@ -72,7 +76,10 @@ const LeftSidebar = ({ className, showLeftSidebar, setShowLeftSidebar }) => {
           <li>
             <Link
               href="/reels"
-              className="font-bold p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center"
+              className={`font-bold p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center
+                ${pathname == "/reels" ? "bg-gray-400 !text-white" : ""} 
+          
+              `}
             >
               <MdOutlineEventAvailable size={20} className="mr-2" />
               Reels
@@ -81,7 +88,10 @@ const LeftSidebar = ({ className, showLeftSidebar, setShowLeftSidebar }) => {
           <li>
             <Link
               href="/events"
-              className="font-bold  p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center"
+              className={`font-bold  p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center
+                ${pathname == "/events" ? "bg-gray-400 !text-white" : ""} 
+              
+              `}
             >
               <RiCalendarEventLine size={20} className="mr-2" />
               Events
