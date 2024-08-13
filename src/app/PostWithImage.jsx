@@ -22,6 +22,7 @@ const PostWithImage = () => {
                 <p>Main Auditorium</p>
               </span>
             </div>
+
           </div>
 
           <div className="bg-red-400 px-5 py-1 rounded-md">Found</div>
@@ -30,22 +31,17 @@ const PostWithImage = () => {
         {/* Large Image */}
         <img
           className="w-full h-auto rounded-t-sm"
-          src="https://picsum.photos/id/244/900/900"
+          src="/images/avatar/laptop2.jpeg"
           alt="Large visual"
         />
 
         {/* Caption */}
         <div className="p-4">
           <p className="text-sm text-gray-800">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut
-            turpis in est scelerisque auctor. Maecenas nec diam vel quam tempor
-            fermentum vel a metus. Nullam euismod, justo eget congue tempor,
-            orci libero cursus ante, eu pellentesque ipsum mi nec libero.
-            Curabitur interdum orci vitae felis feugiat, nec pretium libero
-            iaculis. Aliquam erat volutpat. Sed ac tincidunt elit. In hendrerit,
-            purus vel consequat faucibus, nisi velit suscipit nunc, eu bibendum
-            orci dolor nec nunc.{" "}
-            <span className="text-blue-500">Read More...</span>
+            A black laptop was found at the UMAT Mini Auditorium. The device has
+            a few stickers on the lid and was left unattended on a seat. It
+            appears to be in good condition and is being held for the rightful
+            owner. <span className="text-blue-500">Read More...</span>
           </p>
           <div className="w-full">
             <p className="text-sm text-gray-500 text-right">Oct 15th 8:33pm</p>
