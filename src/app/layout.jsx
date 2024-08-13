@@ -3,10 +3,12 @@
 import { useState } from "react";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "leaflet/dist/leaflet.css";
 
 import Navbar from "@/components/Navbar";
 import RightSidebar from "@/components/RightSidebar";
 import LeftSidebar from "@/components/LeftSidebar";
+import Chatbot from "@/components/Chatbot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +44,8 @@ export default function RootLayout({ children }) {
               <div className="bg-white overflow-hidden !mb-2 p-2 md:p-4">
                 {children}
               </div>
+
+              <Chatbot />
             </article>
             <RightSidebar
               showRightSidebar={showRightSidebar}

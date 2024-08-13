@@ -27,8 +27,10 @@ const RightSidebar = ({ className, showRightSidebar }) => {
         showRightSidebar ? "translate-x-0" : "translate-x-full"
       } !bg-white xl:translate-x-0 dark:bg-gray-800 ${className}`}
     >
-      <div className="text-black font-bold m-4 my-3 mb-3">
-        <h2 className="mb-3">Trending</h2>
+
+      <div className="text-black font-bold m-4">
+        <h2 className="mb-3">Trending Missing Items</h2>
+
         <div className="flex justify-around">
           <div className="bg-[url('/images/story/story102.jpg')] bg-cover bg-center flex flex-col justify-end  h-36 bg-slate-400 w-2/5 rounded-2xl overflow-hidden ">
             <div className="flex bg-white mx-auto gap-1 p-1 m-1 rounded-xl font-normal text-sm ">

@@ -1,4 +1,5 @@
 import React from "react";
+import { IoLocationOutline } from "react-icons/io5";
 
 const PostWithImage = () => {
   return (
@@ -13,10 +14,11 @@ const PostWithImage = () => {
           />
           <div className="ml-3">
             <span className="text-lg font-semibold block leading-tight">
-              8fact
+              Nana Acamoah
             </span>
-            <span className="text-gray-600 text-sm block">
-              Asheville, North Carolina
+            <span className="text-gray-600 text-sm flex">
+              <IoLocationOutline className="text-lg mr-2" />
+              <p>Main Auditorium</p>
             </span>
           </div>
         </div>
