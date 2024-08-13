@@ -25,14 +25,14 @@ const Sidebar = ({ className }) => {
     <aside
       className={`-mt-1 z-40 transition-transform ${
         showSidebar ? "translate-x-0" : "-translate-x-full"
-      } !bg-white md:translate-x-0 dark:bg-gray-800 ${className}`}
+      } !bg-white md:translate-x-0  ${className}`}
     >
-      <div className="h-full py-5 px-3 bg-white dark:bg-gray-800">
+      <div className="h-full py-5 px-3 bg-white">
         <ul className="space-y-2 mb-5">
           <li>
             <Link
               href="/admin/products"
-              className={`flex items-center ml-3 p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group ${
+              className={`flex items-center ml-3 p-2 text-base font-medium text-gray-900 rounded-lg hover:bg-gray-100 group ${
                 pathname == "/admin/products" ? "bg-gray-100" : ""
               }`}
             >
@@ -44,7 +44,7 @@ const Sidebar = ({ className }) => {
           <li>
             <Link
               href="/admin/products"
-              className={`flex items-center ml-3 p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group ${
+              className={`flex items-center ml-3 p-2 text-base font-medium text-gray-900 rounded-lg  hover:bg-gray-100  group ${
                 pathname == "/admin/products" ? "bg-gray-100" : ""
               }`}
             >
@@ -56,7 +56,7 @@ const Sidebar = ({ className }) => {
           <li>
             <Link
               href="/admin/products"
-              className={`flex items-center ml-3 p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group ${
+              className={`flex items-center ml-3 p-2 text-base font-medium text-gray-900 rounded-lg hover:bg-gray-100 group ${
                 pathname == "/admin/products" ? "bg-gray-100" : ""
               }`}
             >
@@ -74,7 +74,7 @@ const Sidebar = ({ className }) => {
           <li>
             <button
               type="button"
-              className="flex items-center ml-3 p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+              className="flex items-center ml-3 p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 "
               aria-controls="dropdown-sales"
               data-collapse-toggle="dropdown-sales"
               onClick={() => setIsOpen(!isOpen)}
@@ -94,7 +94,7 @@ const Sidebar = ({ className }) => {
               <li>
                 <Link
                   href="#"
-                  className="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  className="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100"
                 >
                   <MdOutlineEventAvailable className="text-xl text-gray-500" />
                   <span className="ml-3 text-sm ">Event 1</span>
@@ -104,7 +104,7 @@ const Sidebar = ({ className }) => {
               <li>
                 <Link
                   href="#"
-                  className="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  className="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 "
                 >
                   <MdOutlineEventAvailable className="text-xl text-gray-500" />
                   <span className="ml-3 text-sm font-base">Event 2</span>
