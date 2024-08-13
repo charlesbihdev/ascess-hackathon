@@ -25,94 +25,24 @@ const RightSidebar = ({ className }) => {
     <aside
       className={` z-40 transition-transform ${
         showSidebar ? "translate-x-0" : "-translate-x-full"
-      } !bg-white md:translate-x-0 dark:bg-gray-800 ${className}`}
+      } !bg-white md:translate-x-0 ${className}`}
     >
-      <div className="h-full py-5 px-3 bg-white dark:bg-gray-800">
-        <ul className="space-y-2 mb-5">
-          <li>
-            <Link
-              href="/admin/products"
-              className={`flex items-center ml-3 p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group ${
-                pathname == "/admin/products" ? "bg-gray-100" : ""
-              }`}
-            >
-              <RiAdminLine className="text-xl text-gray-500" />
-              <span className="ml-3">Music</span>
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              href="/admin/products"
-              className={`flex items-center ml-3 p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group ${
-                pathname == "/admin/products" ? "bg-gray-100" : ""
-              }`}
-            >
-              <RiAdminLine className="text-xl text-gray-500" />
-              <span className="ml-3">Reels</span>
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              href="/admin/products"
-              className={`flex items-center ml-3 p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group ${
-                pathname == "/admin/products" ? "bg-gray-100" : ""
-              }`}
-            >
-              <RiAdminLine className="text-xl text-gray-500" />
-              <span className="ml-3">Gaming</span>
-            </Link>
-          </li>
-        </ul>
-
-        <hr />
-
-        <ul className="mt-5">
-          <p className="font-extrabold text-base">EVENTS</p>
-
-          <li>
-            <button
-              type="button"
-              className="flex items-center ml-3 p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-              aria-controls="dropdown-sales"
-              data-collapse-toggle="dropdown-sales"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              <RiCalendarEventLine className="text-xl text-gray-500" />
-              <span className="flex-1 ml-3 text-sm text-left whitespace-nowrap">
-                Choose Event
-              </span>
-              {!isOpen ? (
-                <PiCaretDownBold className="mr-6" />
-              ) : (
-                <PiCaretUpBold className="mr-6" />
-              )}
-            </button>
-
-            <ul className={`${isOpen ? "block" : "hidden"} py-2 space-y-2`}>
-              <li>
-                <Link
-                  href="#"
-                  className="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                >
-                  <MdOutlineEventAvailable className="text-xl text-gray-500" />
-                  <span className="ml-3 text-sm ">Event 1</span>
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  href="#"
-                  className="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                >
-                  <MdOutlineEventAvailable className="text-xl text-gray-500" />
-                  <span className="ml-3 text-sm font-base">Event 2</span>
-                </Link>
-              </li>
-            </ul>
-          </li>
-        </ul>
+      <div className="text-black font-bold m-4">
+        <h2>Trending</h2>
+        <div className="flex justify-around">
+          <div className="bg-[url('/images/story/story102.jpg')] bg-cover bg-center flex flex-col justify-end  h-36 bg-slate-400 w-2/5 rounded-2xl overflow-hidden ">
+            <div className="flex bg-white mx-auto gap-1 p-1 m-1 rounded-xl font-normal text-sm ">
+              <span className="bg-slate-200 rounded-full w-5 "></span>
+              <p>Charles</p>
+            </div>
+          </div>
+          <div className="bg-[url('/images/story/storyy101.jpeg')] bg-cover bg-center flex flex-col justify-end  h-36 bg-slate-400 w-2/5 rounded-2xl overflow-hidden">
+            <div className="flex bg-white mx-auto gap-1 p-1 m-1 rounded-xl font-normal text-sm ">
+              <span className="bg-slate-200 rounded-full w-5 "></span>
+              <p>Aceses</p>
+            </div>
+          </div>
+        </div>
       </div>
     </aside>
   );
