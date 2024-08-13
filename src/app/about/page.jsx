@@ -9,7 +9,7 @@ const page = () => {
       <Navbar avatar="/images/avatar/avatar.jpg" />
       <main className="pt-[4.1rem] min-h-screen">
         <Sidebar
-          className=" fixed overflow-scroll w-[16rem] overflow-y-auto h-screen max-h-screen pb-8 border"
+          className="top-0 fixed overflow-scroll w-[16rem] overflow-y-auto h-screen max-h-screen pb-8"
           // pathname={pathname}
           // showSidebar={showSidebar}
         />

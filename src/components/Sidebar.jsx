@@ -23,11 +23,11 @@ const Sidebar = ({ className }) => {
 
   return (
     <aside
-      className={`-mt-1 md:mt-[1.5px] z-40 transition-transform ${
+      className={`-mt-1 z-40 transition-transform ${
         showSidebar ? "translate-x-0" : "-translate-x-full"
-      } !bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700 ${className}`}
+      } !bg-white md:translate-x-0 dark:bg-gray-800 ${className}`}
     >
-      <div className=" py-5 px-3 bg-white dark:bg-gray-800">
+      <div className="h-full py-5 px-3 bg-white dark:bg-gray-800">
         <ul className="space-y-2 mb-5">
           <li>
             <Link
