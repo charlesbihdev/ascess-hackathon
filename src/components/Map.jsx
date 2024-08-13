@@ -1,4 +1,3 @@
-// components/Map.js
 "use client";
 // components/Map.js
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
@@ -39,7 +38,7 @@ const Map = ({ items }) => {
             <p>{item.description}</p>
             <p className="text-red-500">Location Found:</p>
             <p className="text-blue-600 -mt-2">{item.location}</p>
-            <a href="wa.link/3a6gw9">
+            <a href="https://wa.link/3a6gw9">
               <p className="text-white text-base bg-green-700 px-3 py-3 text-center w-28 rounded-md">
                 Chat Poster
               </p>
