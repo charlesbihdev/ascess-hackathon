@@ -26,7 +26,8 @@ const posts = [
     status: "Lost",
     username: "Ama Boateng",
     location: "Cafeteria",
-    imageSrc: "https://picsum.photos/id/1018/600/400",
+    imageSrc:
+      "https://cdn.thewirecutter.com/wp-content/media/2023/10/smartphone-2048px-4861.jpg",
     timestamp: "Oct 17th 1:45pm",
   },
   {
@@ -35,7 +36,8 @@ const posts = [
     status: "Found",
     username: "Kofi Adu",
     location: "Parking Lot",
-    imageSrc: "https://picsum.photos/id/1019/600/400",
+    imageSrc:
+      "https://cdn.thewirecutter.com/wp-content/media/2021/09/walletbackpain-2048px-184362048.jpg",
     timestamp: "Oct 18th 3:22pm",
   },
   {

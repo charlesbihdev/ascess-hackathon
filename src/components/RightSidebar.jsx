@@ -45,7 +45,7 @@ const RightSidebar = ({ className, showRightSidebar }) => {
           </div>
         </div>
 
-        <h2 className="my-3">Events</h2>
+        <h2 className="my-3">Recent Missing Items</h2>
         <div className="flex flex-col">
           {/* Example 3: Research Paper Presentation */}
           <EventCard
