@@ -8,7 +8,8 @@ const posts = [
     status: "Found",
     username: "Nana Acamoah",
     location: "Main Auditorium",
-    imageSrc: "https://picsum.photos/id/1015/600/400",
+    imageSrc:
+      "https://cdn.thewirecutter.com/wp-content/media/2023/10/smartphone-2048px-4861.jpg",
     timestamp: "Oct 15th 8:33pm",
   },
   {
@@ -17,7 +18,8 @@ const posts = [
     status: "Lost",
     username: "Kwame Mensah",
     location: "Library Entrance",
-    imageSrc: "https://picsum.photos/id/1016/600/400",
+    imageSrc:
+      "https://cdn.thewirecutter.com/wp-content/media/2021/09/walletbackpain-2048px-184362048.jpg",
     timestamp: "Oct 16th 9:00am",
   },
   {
@@ -46,7 +48,8 @@ const posts = [
     status: "Lost",
     username: "Esi Osei",
     location: "Dormitory Hallway",
-    imageSrc: "/images/avatar/laptop.jpeg",
+    imageSrc:
+      "https://cdn.thewirecutter.com/wp-content/media/2023/10/smartphone-2048px-4861.jpg",
     timestamp: "Oct 19th 5:10pm",
   },
   {
@@ -55,7 +58,8 @@ const posts = [
     status: "Lost",
     username: "Kwabena Asante",
     location: "Computer Lab",
-    imageSrc: "https://picsum.photos/id/1021/600/400",
+    imageSrc:
+      "https://cdn.thewirecutter.com/wp-content/media/2021/09/walletbackpain-2048px-184362048.jpg",
     timestamp: "Oct 20th 7:30am",
   },
   {
@@ -73,7 +77,8 @@ const posts = [
     status: "Found",
     username: "Yaw Boakye",
     location: "Library",
-    imageSrc: "https://picsum.photos/id/1023/600/400",
+    imageSrc:
+      "https://cdn.thewirecutter.com/wp-content/media/2023/10/smartphone-2048px-4861.jpg",
     timestamp: "Oct 22nd 10:30am",
   },
   {
@@ -82,17 +87,9 @@ const posts = [
     status: "Lost",
     username: "Martha Agyeman",
     location: "Administration Office",
-    imageSrc: "https://picsum.photos/id/1024/600/400",
+    imageSrc:
+      "https://cdn.thewirecutter.com/wp-content/media/2021/09/walletbackpain-2048px-184362048.jpg",
     timestamp: "Oct 23rd 4:15pm",
-  },
-  {
-    caption:
-      "A water bottle was found in the gym. It’s a stainless steel bottle with a sports logo.",
-    status: "Found",
-    username: "Samuel Kofi",
-    location: "Gym",
-    imageSrc: "https://picsum.photos/id/1025/600/400",
-    timestamp: "Oct 24th 6:00pm",
   },
 ];
 

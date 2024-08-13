@@ -22,7 +22,6 @@ const PostWithImage = () => {
                 <p>Main Auditorium</p>
               </span>
             </div>
-
           </div>
 
           <div className="bg-red-400 px-5 py-1 rounded-md">Found</div>
