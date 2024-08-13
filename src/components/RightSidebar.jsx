@@ -16,15 +16,14 @@ import { PiCaretUpBold } from "react-icons/pi";
 
 import { MdOutlineEventAvailable } from "react-icons/md";
 
-const RightSidebar = ({ className }) => {
+const RightSidebar = ({ className, showRightSidebar }) => {
   const pathname = "/";
   const [isOpen, setIsOpen] = useState(true);
-  const [showSidebar, setShowSidebar] = useState(true);
 
   return (
     <aside
       className={` z-40 transition-transform ${
-        showSidebar ? "translate-x-0" : "-translate-x-full"
+        showRightSidebar ? "translate-x-0" : "translate-x-full"
       } !bg-white md:translate-x-0 dark:bg-gray-800 ${className}`}
     >
       <div className="h-full py-5 px-3 bg-white dark:bg-gray-800">
