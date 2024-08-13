@@ -7,6 +7,7 @@ import { RiCalendarEventLine } from "react-icons/ri";
 import { MdOutlineEventAvailable } from "react-icons/md";
 import { PiUserListBold } from "react-icons/pi";
 import { PiCaretDownBold, PiCaretUpBold } from "react-icons/pi";
+import { FiBookOpen } from "react-icons/fi";
 import { usePathname } from "next/navigation";
 
 const LeftSidebar = ({ className, showLeftSidebar, setShowLeftSidebar }) => {
@@ -103,6 +104,15 @@ const LeftSidebar = ({ className, showLeftSidebar, setShowLeftSidebar }) => {
             >
               <PiUserListBold size={20} className="mr-2" />
               Profile
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/resources/docs"
+              className="font-bold p-2 rounded-lg text-black hover:bg-gray-800 hover:text-white transition-colors flex items-center"
+            >
+              <FiBookOpen size={20} className="mr-2" />
+              Resources
             </Link>
           </li>
         </ul>
